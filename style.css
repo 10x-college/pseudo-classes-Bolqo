@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    height: 97px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECEDED;
+    position:sticky;
+    z-index: 1000;
+    top:0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+}
+
+.header h1 {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 27px;
+    position: absolute;
+}
+
+h1 .P {
+    color: #3D8493;
+}
+
+h1 .O {
+    color: #D89F65;
+}
+
+h1 .S {
+    color: #4A5C2F;
+}
+
+
+.search-input {
+    width: 357px;
+    height: 58px;
+    background-color: #ECF3F5;
+    color: #2C3832;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    border-radius: 20px;
+    padding: 0px 25px;
+    left: 225px;
+    top: 21px;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+}
+.search-input:focus{
+    color: #898e92;
+}
+
+input:focus {
+  outline:none;
+  box-shadow:1px 1px 20px 1px #53a0d468;
+}
+
+
+.date-input {
+    border: none;
+    position: absolute;
+    right: 220px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #89928E;
+    background-color: #ecf3f500;
+    border-radius: 0px;
+    top: 40px;
+}
+
+.reservation-btn {
+    color: #2C3832;
+    background-color: #B1CED4;
+    border: none;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 500;
+    right: 29px;
+    top: 20px;
+    padding: 19px 0px;
+    border-radius: 20px;
+    text-align: center;
+    text-transform:uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.reservation-btn::placeholder {
+    color: #2C3832;
+}
+
+
+
+main {
+    position: relative;
+}
+
+.container {
+    max-width: 1100px;
+    display: inline;
+    position: absolute;
+    left: 120px;
+    top: 40px;
+}
+
+.card {
+    display: inline-block;
+    width: 203px;
+    height: 214px;
+    margin: 15px;
+    background-color:#D8E6E9;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.category {
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    left: 11px;
+    bottom: 14px;
+}
+
+.category-item-n {
+    width: 23px;
+    height: 23px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: #D89F65;
+    border: none;
+    position: absolute;
+    right: 64px;
+    bottom: 12px;
+   
+}
+
+.category-item-0 {
+    width: 23px;
+    height: 23px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: #EAF0F0;
+    border: none;
+    position: absolute;
+    right: 64px;
+    bottom: 12px;
+   
+}
+
+.category-item-g {
+    width: 23px;
+    height: 23px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border-radius: 50px;
+    background-color: #D89F65;
+    border: none;
+    position: absolute;
+    right: 64px;
+    bottom: 12px;
+   
+}
+
+.card img {
+    width: 100%;
+    height: 143px;  
+    object-fit: cover;
+}
+
+
+
+.card .pepper {
+    width: 20px;
+    height: 17px;
+    position: absolute;
+    bottom: 13px;
+    right: 14px;
+}
+
+.card .pepper2 {
+    width: 38px;
+    height: 17px;
+    position: absolute;
+    bottom: 13px;
+    right: 14px;
+}
+.pepper-hidden {
+    display: none;
+}
+
+
+
+
+
+.footer {
+    width: 100%;
+    height: 120px;
+    background-color: #FFFFFF;
+    z-index: 1001;
+    position: fixed;
+    bottom: 0px;
+    
+    nav {
+        position: fixed;
+        width: 950px;
+        height: 105px;
+        bottom: 117px;
+        left: 115px;
+        background-color: #EAF0F0;
+        
+        ul .filter-btn {
+            display: inline-block;
+            color: #A9A9A9;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            background-color: #D9D9D9;
+            padding: 19px 44px ;
+            margin: 25px;
+            border-radius: 10px;
+            bottom: 0;
+        }
+
+        .filter-btn:hover {
+            background-color: #4A5C2F;
+            color: #ECF3F5;
+        }
+
+        .filter-btn:active {
+            background-color: #5a8619;
+            color: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #A9A9A9;
+         
+        }
+    
+    }
+}
