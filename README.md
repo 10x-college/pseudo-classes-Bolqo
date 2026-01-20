@@ -109,3 +109,4 @@
 ✔️ README.md ფაილში დამატებულია ნამუშევრის სქრინშოთი
 
 ![Screenshot](.//assets/images/preview.png)
+https://bolqo.github.io/pseudo-classes-Bolqo/index.html
